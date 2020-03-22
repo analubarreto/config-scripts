@@ -33,3 +33,28 @@ By now there's only a RoR configuration script for Ubuntu 19.10+ <br/>
   ** cat ~/.ssh/id_rsa.pub (in a terminal window) <br/>
   ** paste the result here: https://github.com/settings/keys <br/>
 * postgreql user
+
+## Flutter Script
+The flutter script will not completely configure flutter in your machine. It will download, install flutter and android studio. For further instructions you should go to:
+
+https://flutter.dev/docs/get-started/install/linux
+
+And start reading at Set up your Android device
+
+## Ubuntu post install scripts
+There are two post install scripts one for Developers and one for normal users.
+### Post install for normal users installs
+* discord
+* spotify
+* slack
+* steam
+
+### Post install for normal users
+Installs
+* git
+* curl
+* npm
+* yarn
+* node 12
+* VSCode
+* postman
