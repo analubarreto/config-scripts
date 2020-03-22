@@ -20,9 +20,8 @@ sudo apt update && sudo apt upgrade -y
 
 echo '## Installing curl ##'
 sudo apt install curl -y
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+curl -sL https://deb.nodesource.com/setup_13.x | sudo bash -
+sudo apt-get install -y nodejs
 
 echo '## Installing npm and yarn ##'
 sudo apt install npm
@@ -36,8 +35,33 @@ git config --global user.email "$git_email"
 echo '## Installing VSCode ##'
 sudo snap install code --classic
 
+echo '## Installing GCC and G++ ##'
+sudo apt-get install gcc g++ make
+
+## Front-End Setup ##
+echo '## Installing VueJS ##'
+sudo npm install -g @vue/cli
+
+## Back-End Setup ##
+
 echo '## Installing Postman ##'
 sudo snap install postman
 
+echo '## Installing Postgresql ##'
+sudo apt install postgresql libpq-dev -y
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
+
+echo 'Now we are creating your postgres user, what username would like?'
+read postgres_username
+
+sudo -u postgres createuser $postgres_username -s
+
+echo '## Installing Mongodb ##'
+sudo apt install -y mongodb
+sudo systemctl enable mongodb
+sudo systemctl start mongodb
+
 echo 'All done! Thanks for using this script! :)'
+exec $SHELL
 ### FINISHED SCRIPT ###
