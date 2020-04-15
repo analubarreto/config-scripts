@@ -49,7 +49,7 @@ There are two post install scripts one for Developers and one for normal users.
 * slack
 * steam
 
-### Post install for normal users installs
+### Post install for developers installs
 * git
 * curl
 * npm
@@ -57,4 +57,3 @@ There are two post install scripts one for Developers and one for normal users.
 * node 12
 * VSCode
 * postman
-* 
