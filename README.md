@@ -54,6 +54,6 @@ There are two post install scripts one for Developers and one for normal users.
 * curl
 * npm
 * yarn
-* node 12
+* nodeJS
 * VSCode
 * postman
