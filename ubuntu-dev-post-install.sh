@@ -12,6 +12,9 @@ read git_email
 echo 'What is your github username?'
 read git_username
 
+echo 'What node version do you want to install?'
+read node_version
+
 #### MAIN
 
 echo '## Script start ##'
@@ -19,9 +22,8 @@ echo '## Updating system ##'
 sudo apt update && sudo apt upgrade -y
 
 echo '## Installing curl ##'
-sudo apt install curl -y
-curl -sL https://deb.nodesource.com/setup_13.x | sudo bash -
-sudo apt-get install -y nodejs
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+nvm install node_version
 
 echo '## Installing npm and yarn ##'
 sudo apt install npm
