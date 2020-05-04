@@ -14,17 +14,14 @@ sudo apt update && sudo apt upgrade -y
 echo '## Install flatpak ##'
 sudo apt instal install flatpak
 
-echo '## Install Discord, Zoom and Odrive ##'
-sudo snap install discord zoom-client odrive-unofficial
+echo '## Install Discord, Zoom, Odrive and Figma ##'
+sudo snap install discord zoom-client odrive-unofficial figma-linux
 
 echo '## Install slack ##'
 sudo snap install slack --classic
 
 echo '## Install steam ##'
-sudo apt install steam
-
-echo '## Install Tidal ##'
-flatpak install nuvola eu.tiliado.NuvolaAppTidal 
+sudo apt install steam -y
 
 echo 'All done! Thanks for using this script! :)'
 ### FINISHED SCRIPT ###
