@@ -1,8 +1,6 @@
 # config-scripts
 Linux O.S. configuration scripts
 
-By now there's only a RoR configuration script for Ubuntu 19.10+ <br/>
-
 ## RoR Script
 
 ### How to install RoR using the given script
