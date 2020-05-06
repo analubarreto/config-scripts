@@ -1,8 +1,6 @@
 # config-scripts
 Linux O.S. configuration scripts
 
-By now there's only a RoR configuration script for Ubuntu 19.10+ <br/>
-
 ## RoR Script
 
 ### How to install RoR using the given script
@@ -48,8 +46,12 @@ There are two post install scripts one for Developers and one for normal users.
 * spotify
 * slack
 * steam
+* flatpak
+* zoom
+* odrive
+* figma
 
-### Ubuntu post install for developers installs
+### Ubuntu post install for developers, installs
 * git
 * curl
 * npm
@@ -60,7 +62,7 @@ There are two post install scripts one for Developers and one for normal users.
 * vue-cli
 * vue-native-cli
 
-## Arch post install installs
+## Arch post install, installs
 * snap
 * vscode
 * sublime text
