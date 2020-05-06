@@ -69,7 +69,6 @@ There are two post install scripts one for Developers and one for normal users.
 * vue native cli
 * expo-cli
 * vue-cli
-* android studio
 * mongodb
 * figma
 * gravit-designer

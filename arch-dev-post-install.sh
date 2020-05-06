@@ -27,7 +27,6 @@ sudo pacman nodejs
 echo '## Installing Front-End stuff ##'
 sudo npm install --global yarn expo-cli vue-native-cli
 sudo npm install --global @vue-cli
-yay -S android-studio --noconfirm
 
 echo '## Setting up git ##'
 git config --global user.name "$git_username"
