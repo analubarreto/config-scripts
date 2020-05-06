@@ -43,6 +43,7 @@ sudo apt-get install gcc g++ make
 echo '## Installing VueJS/Native ##'
 sudo npm install -g @vue/cli
 sudo npm install -g vue-native-cli
+sudo npm install -g expo-cli
 
 ## Back-End Setup ##
 

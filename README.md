@@ -43,13 +43,13 @@ And start reading at Set up your Android device
 
 ## Ubuntu post install scripts
 There are two post install scripts one for Developers and one for normal users.
-### Post install for normal users installs
+### Ubuntu post install for normal users installs
 * discord
 * spotify
 * slack
 * steam
 
-### Post install for developers installs
+### Ubuntu post install for developers installs
 * git
 * curl
 * npm
@@ -57,3 +57,23 @@ There are two post install scripts one for Developers and one for normal users.
 * nodeJS
 * VSCode
 * postman
+* vue-cli
+* vue-native-cli
+
+## Arch post install installs
+* snap
+* vscode
+* sublime text
+* nodejs (latest version)
+* yarn
+* vue native cli
+* expo-cli
+* vue-cli
+* android studio
+* mongodb
+* figma
+* gravit-designer
+* steam
+* wps office
+
+This script was only tested on Manjaro, if you are going to test it on arch linux, please give me some feedback
