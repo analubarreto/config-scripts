@@ -46,8 +46,12 @@ There are two post install scripts one for Developers and one for normal users.
 * spotify
 * slack
 * steam
+* flatpak
+* zoom
+* odrive
+* figma
 
-### Ubuntu post install for developers installs
+### Ubuntu post install for developers, installs
 * git
 * curl
 * npm
@@ -58,7 +62,7 @@ There are two post install scripts one for Developers and one for normal users.
 * vue-cli
 * vue-native-cli
 
-## Arch post install installs
+## Arch post install, installs
 * snap
 * vscode
 * sublime text
