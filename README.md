@@ -44,12 +44,18 @@ There are two post install scripts one for Developers and one for normal users.
 ### Ubuntu post install for normal users installs
 * discord
 * spotify
-* slack
+* slack (optional)
 * steam
 * flatpak
-* zoom
-* odrive
+* zoom (optional)
+* odrive (optional)
+
+#### For media production
 * figma
+* gravit-designer (option 1)
+* Inkscape (option 2)
+* OBS Studio
+* Blender
 
 ### Ubuntu post install for developers, installs
 * git
@@ -59,8 +65,9 @@ There are two post install scripts one for Developers and one for normal users.
 * nodeJS
 * VSCode
 * postman
-* vue-cli
-* vue-native-cli
+* mongodb
+* vue-cli (optional)
+* vue-native-cli (optional)
 
 ## Arch post install, installs
 * snap
