@@ -13,7 +13,10 @@ echo 'What is your github username?'
 read git_username
 
 echo 'What node version do you want to install?'
-read node_version -y
+read node_version
+
+echo 'Do you want to install vue and vue-native (y/n)?'
+read bool_vue
 
 #### MAIN
 
@@ -39,11 +42,13 @@ sudo snap install code --classic
 echo '## Installing GCC and G++ ##'
 sudo apt-get install gcc g++ make
 
-## Front-End Setup ##
-echo '## Installing VueJS/Native ##'
-sudo npm install -g @vue/cli
-sudo npm install -g vue-native-cli
-sudo npm install -g expo-cli
+if [$bool_vue -eq 'y'] then
+  ## Front-End Setup ##
+  echo '## Installing VueJS/Native ##'
+  sudo npm install -g @vue/cli
+  sudo npm install -g expo-cli
+  sudo npm install -g vue-native-cli
+fi
 
 ## Back-End Setup ##
 
