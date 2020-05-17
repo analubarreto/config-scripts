@@ -1,6 +1,11 @@
+
 # Flutter Ubuntu install #
 
 #### Main
+echo 'Updating system and installing git'
+sudo apt update && sudo apt upgrade -y
+sudo apt install git
+
 echo 'Downloading flutter from github'
 git clone https://github.com/flutter/flutter.git -b stable
 
@@ -10,6 +15,9 @@ mv flutter $HOME/development
 
 echo 'Adding flutter tool to path'
 export PATH="$PATH:`pwd`/flutter/bin"
+
+echo 'Adding flutter permanently to PATH'
+export PATH="$PATH:$HOME/development/flutter/bin"
 
 echo 'Pre downloading development binaries'
 flutter precache
@@ -22,8 +30,9 @@ export PATH="$PATH:$HOME/development/flutter/bin"
 which flutter
 
 echo 'Running flutter doctor'
-echo 'Your next steps will be given by the flutter doctor command'
+echo 'Now you will have to manually accept the licenses, just keep pressing enter'
 flutter doctor
+flutter doctor --android-licenses
 
 echo 'All done! Thanks for using this script! :)'
 ### FINISHED SCRIPT ###
