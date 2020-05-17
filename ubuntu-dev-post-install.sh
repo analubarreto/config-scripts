@@ -1,3 +1,4 @@
+
 ## Ubuntu post install for devs
 #### VARIABLES
 ####
@@ -14,12 +15,6 @@ read git_username
 
 echo 'What node version do you want to install?'
 read node_version
-
-echo 'Do you want to install vue and vue-native (y/n)?'
-read bool_vue
-
-echo 'Are you a back-end developer (y/n)?'
-read bool_back_end
 
 #### MAIN
 
@@ -44,38 +39,6 @@ sudo snap install code --classic
 
 echo '## Installing GCC and G++ ##'
 sudo apt-get install gcc g++ make
-
-if [$bool_vue -eq 'y']
-then
-  ## Front-End Setup ##
-  echo '## Installing VueJS/Native ##'
-  sudo npm install -g @vue/cli
-  sudo npm install -g expo-cli
-  sudo npm install -g vue-native-cli
-fi
-
-if [$bool_back_end -eq 'y']
-then
-	## Back-End Setup ##
-
-	echo '## Installing Postman ##'
-	sudo snap install postman
-
-	echo '## Installing Postgresql ##'
-	sudo apt install postgresql libpq-dev -y
-	sudo systemctl enable postgresql
-	sudo systemctl start postgresql
-
-	echo 'Now we are creating your postgres user, what username would like?'
-	read postgres_username
-
-	sudo -u postgres createuser $postgres_username -s
-
-	echo '## Installing Mongodb ##'
-	sudo apt install -y mongodb
-	sudo systemctl enable mongodb
-	sudo systemctl start mongodb
-fi
 
 echo 'All done! Thanks for using this script! :)'
 exec $SHELL
